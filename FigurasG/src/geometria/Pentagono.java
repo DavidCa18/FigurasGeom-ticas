@@ -2,24 +2,20 @@ package geometria;
 
 public class Pentagono extends FiguraG{
     double lado;
+    PuntoInicial punto;
     
     public Pentagono() {
-        tipoFigura = "Cuadrado";
+        tipoFigura = "Pentágono";
     }
 
     @Override
-    int Orden() {
+    public int Orden() {
         return 4;
     }
 
     @Override
     public String toString() {
-        return "Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+PuntoInicial(5, 5);
-    }
-
-    @Override
-    public String PuntoInicial(int CoordenadaX, int CoordenadaY) {
-        return super.PuntoInicial(CoordenadaX, CoordenadaY); //To change body of generated methods, choose Tools | Templates.
+        return "Orden: "+Orden()+" Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+punto;
     }
     
     

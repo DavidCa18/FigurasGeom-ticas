@@ -3,24 +3,20 @@ package geometria;
 
 public class Circulo extends FiguraG{
     private double radio;
+    PuntoInicial punto;
     
     public Circulo(){
         tipoFigura = "Círculo";
     }
 
     @Override
-    int Orden() {
+    public int Orden() {
         return 6;    
     }
 
     @Override
     public String toString() {
-        return "Soy un: "+tipoFigura+" mi radio es: "+radio+" y mis coordenados son:"+PuntoInicial(5, 5);//To change body of generated methods, choose Tools | Templates.
+        return "Orden: "+Orden()+" Soy un: "+tipoFigura+" mis lados son de: "+radio+" y mis coordenados son:"+punto;
     }
 
-    @Override
-    public String PuntoInicial(int CoordenadaX, int CoordenadaY) {
-        return super.PuntoInicial(CoordenadaX, CoordenadaY); //To change body of generated methods, choose Tools | Templates.
-    }   
-    
 }

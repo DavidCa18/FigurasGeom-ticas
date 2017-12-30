@@ -1,30 +1,20 @@
-/*
- * Triangulo
- */
 package geometria;
 
-/**
- * @author www.ajpdsoft.com
- */
 public class Triangulo extends FiguraG{
     private double lado;
+    PuntoInicial punto;
     
     public Triangulo() {
         tipoFigura = "Triangulo";
     }
     @Override
-    int Orden() {
+    public int Orden() {
         return 1;
     }
 
     @Override
     public String toString() {
-        return "Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+PuntoInicial(5, 5);
-    }
-
-    @Override
-    public String PuntoInicial(int CoordenadaX, int CoordenadaY) {
-        return super.PuntoInicial(CoordenadaX, CoordenadaY); //To change body of generated methods, choose Tools | Templates.
+        return "Orden: "+Orden()+" Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+punto;
     }
     
 }

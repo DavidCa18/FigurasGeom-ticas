@@ -9,24 +9,19 @@ package geometria;
 public class Rectangulo extends FiguraG
 {
     double base, altura;
-    
+    PuntoInicial punto;
 
-    @Override
-    public String PuntoInicial(int CoordenadaX, int CoordenadaY) {
-        return super.PuntoInicial(CoordenadaX, CoordenadaY);
-    }
-    
     public Rectangulo() {
         tipoFigura = "Rectágulo";
     }
 
     @Override
     public String toString() {
-        return "Soy un: "+tipoFigura+" mi base es: "+base+" y mi altura es: "+altura+" y mis coordenados son:"+PuntoInicial(5, 5);
+        return "Orden: "+Orden()+" Soy un: "+tipoFigura+" mi base es: "+base+" y mi altura es: "+altura+" y mis coordenados son:"+punto;
     }
 
     @Override
-    int Orden() {
+    public  int Orden() {
         return 3;
     }
 

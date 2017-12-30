@@ -11,19 +11,20 @@ package geometria;
  */
 public class Hexagono extends FiguraG {
     double lado;
+    PuntoInicial punto;
     
     public Hexagono() {
-        tipoFigura = "Cuadrado";
+        tipoFigura = "Hexágono";
     }
 
     @Override
-    int Orden() {
+    public int Orden() {
         return 5;
     }
 
     @Override
     public String toString() {
-        return "Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+PuntoInicial(5, 5);
+        return "Orden: "+Orden()+" Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+punto;
     }
     
 }

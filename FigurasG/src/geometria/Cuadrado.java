@@ -3,24 +3,24 @@ package geometria;
 public class Cuadrado extends FiguraG
 {
     double lado;
+    PuntoInicial punto;
+    int orden;
+    String tipoFigura;   
     
-    public Cuadrado() {
+    public FiguraG Cuadrado(double lado) {
+        this.lado = lado;
         tipoFigura = "Cuadrado";
+        return new Cuadrado();      
     }
     
     @Override
-    int Orden() {
+    public int Orden() {
         return 2;
     }
     
     @Override
     public String toString() {
-        return "Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+PuntoInicial(5, 5);
-    }
-
-    @Override
-    public String PuntoInicial(int CoordenadaX, int CoordenadaY) {
-        return super.PuntoInicial(CoordenadaX, CoordenadaY);
-    } 
+        return "Orden: "+Orden()+" Soy un: "+tipoFigura+" mis lados son de: "+lado+" y mis coordenados son:"+punto;
+    }   
     
 }
